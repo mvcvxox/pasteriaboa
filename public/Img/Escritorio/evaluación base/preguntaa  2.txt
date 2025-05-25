@@ -1,0 +1,30 @@
+2. Actualizar la dirección de un cliente junto con ciudad y país 
+
+>db.clientes.find({nombre:"Emma Navarro"})
+>{
+  _id: ObjectId('681fe845431a371bdeccabad'),
+  nombre: 'Emma Navarro',
+  email: 'emma.navarro@yahoo.com',
+  direccion: {
+    calle: 'Las Rosas 280',
+    ciudad: 'Bilbao',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Teclado mecánico',
+      cantidad: 1,
+      precio: 98144
+    }
+  ]
+}
+-------------------------------------------------
+> db.clientes.updateOne({nombre:"Emma Navarro"}, {$set:{direccion:{ calle: "Avenida providencia 789", ciudad: "Santiago", pais: "Chile"}}})
+>{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+

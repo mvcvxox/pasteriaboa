@@ -1,0 +1,143 @@
+4. Buscar y visualizar clientes en una ciudad específica
+db.clientes.find({"direccion.ciudad":"Barcelona"})
+{
+  _id: ObjectId('681fe845431a371bdeccab67'),
+  nombre: 'Sol Rebollo Feliu',
+  email: 'perla41@hotmail.com',
+  direccion: {
+    calle: 'C. Jacinto Pinilla 89',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Smartwatch',
+      cantidad: 1,
+      precio: 195000
+    }
+  ]
+}
+{
+  _id: ObjectId('681fe845431a371bdeccab6a'),
+  nombre: 'Ruy Estrada Andrés',
+  email: 'dmontoya@yahoo.com',
+  direccion: {
+    calle: 'Calle de Che Gallo 24',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Ratón',
+      cantidad: 1,
+      precio: 21000
+    },
+    {
+      producto: 'Auriculares',
+      cantidad: 1,
+      precio: 70000
+    }
+  ]
+}
+{
+  _id: ObjectId('681fe845431a371bdeccab7c'),
+  nombre: 'Fidela Cámara Bernal',
+  email: 'teobaldo56@yahoo.com',
+  direccion: {
+    calle: 'Avenida de Noé Artigas 99 Puerta 2 ',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Ratón',
+      cantidad: 1,
+      precio: 25000
+    }
+  ]
+}
+{
+  _id: ObjectId('681fe845431a371bdeccab9a'),
+  nombre: 'Felix Baeza Lago',
+  email: 'expositotatiana@yahoo.com',
+  direccion: {
+    calle: 'Alameda Amparo Pont 62 Puerta 4 ',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Altavoz Bluetooth',
+      cantidad: 1,
+      precio: 160000
+    }
+  ]
+}
+{
+  _id: ObjectId('681fe845431a371bdeccabaa'),
+  nombre: 'Alejandra Gomez',
+  email: 'a.gomez@gmail.com',
+  direccion: {
+    calle: 'Salvador 854',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Monitor',
+      cantidad: 1,
+      precio: 150000
+    }
+  ]
+}
+{
+  _id: ObjectId('681fe845431a371bdeccabbf'),
+  nombre: 'Lara Sánchez',
+  email: 'lara.sánchez@gmail.com',
+  direccion: {
+    calle: 'Las Focas 665',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Altavoz Bluetooth',
+      cantidad: 3,
+      precio: 114056
+    }
+  ]
+}
+{
+  _id: ObjectId('681fe845431a371bdeccabcc'),
+  nombre: 'Mario Díaz',
+  email: 'mario.díaz@yahoo.com',
+  direccion: {
+    calle: 'Las Amapolas 912',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Teclado mecánico',
+      cantidad: 1,
+      precio: 49978
+    }
+  ]
+}
+{
+  _id: ObjectId('681fe845431a371bdeccabd4'),
+  nombre: 'Emma Gil',
+  email: 'emma.gil@yahoo.com',
+  direccion: {
+    calle: 'Los Álamos 982',
+    ciudad: 'Barcelona',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Smartwatch',
+      cantidad: 1,
+      precio: 83019
+    }
+  ]
+}

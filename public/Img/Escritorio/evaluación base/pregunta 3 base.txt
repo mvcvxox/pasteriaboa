@@ -1,0 +1,25 @@
+3. Eliminar un pedido específico de un cliente 
+db.clientes.find({nombre:"Adelia Soler Viña"})
+{
+  _id: ObjectId('681fe845431a371bdeccab57'),
+  nombre: 'Adelia Soler Viña',
+  email: 'carmen34@yahoo.com',
+  direccion: {
+    calle: 'Ronda José Mari Coronado 22',
+    ciudad: 'Badajoz',
+    pais: 'España'
+  },
+  pedidos: [
+    {
+      producto: 'Teclado',
+      cantidad: 1,
+      precio: 45000
+    }
+  ]
+}
+----------------------------------------------------
+db.clientes.deleteOne({nombre:"Adelia Soler Viña"},{$set:{pedidos:"teclado"}})
+{
+  acknowledged: true,
+  deletedCount: 1
+}

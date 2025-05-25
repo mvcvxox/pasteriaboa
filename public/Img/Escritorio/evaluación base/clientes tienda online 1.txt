@@ -1,0 +1,2355 @@
+1. Crear la base de datos, colección y documentos de clientes con los pedidos 
+use tienda_online
+switched to db tienda_online
+db.createCollection("clientes")
+{ ok: 1 }
+
+db.clientes.inserMany([
+  {
+    "nombre": "Celestina Romero Cañas",
+    "email": "maribelmadrid@hotmail.com",
+    "direccion": {
+      "calle": "Avenida Maribel Escobar 476 Apt. 54 ",
+      "ciudad": "Girona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 90000
+      }
+    ]
+  },
+  {
+    "nombre": "Severino de Amorós",
+    "email": "qcanet@hotmail.com",
+    "direccion": {
+      "calle": "Via Isaac Tovar 55 Apt. 37 ",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 85000
+      }
+    ]
+  },
+  {
+    "nombre": "Bienvenida Peñas Palacio",
+    "email": "ernesto10@yahoo.com",
+    "direccion": {
+      "calle": "Alameda de Gervasio Álamo 16 Apt. 48 ",
+      "ciudad": "Jaén",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Monitor",
+        "cantidad": 1,
+        "precio": 120000
+      }
+    ]
+  },
+  {
+    "nombre": "Godofredo Curro Pou Gomila",
+    "email": "leonel94@yahoo.com",
+    "direccion": {
+      "calle": "Urbanización Amparo Gallardo 893 Apt. 27 ",
+      "ciudad": "Ourense",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 40000
+      }
+    ]
+  },
+  {
+    "nombre": "Gabino Ropero Vara",
+    "email": "mendozatamara@hotmail.com",
+    "direccion": {
+      "calle": "Paseo de Victor Manuel Talavera 88",
+      "ciudad": "Albacete",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 50000
+      }
+    ]
+  },
+  {
+    "nombre": "Bienvenida Cruz Medina",
+    "email": "emiro@yahoo.com",
+    "direccion": {
+      "calle": "Camino de Espiridión Olivera 35",
+      "ciudad": "Cantabria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 20000
+      }
+    ]
+  },
+  {
+    "nombre": "Benita Juárez Cuervo",
+    "email": "inigo75@gmail.com",
+    "direccion": {
+      "calle": "Via de Sabina Lucena 736",
+      "ciudad": "Zamora",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 600000
+      }
+    ]
+  },
+  {
+    "nombre": "Consuela Reig Calvo",
+    "email": "tdomingo@hotmail.com",
+    "direccion": {
+      "calle": "Cañada Quique Bello 4 Piso 1 ",
+      "ciudad": "Segovia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 95000
+      }
+    ]
+  },
+  {
+    "nombre": "Macaria Ibarra Sanmiguel",
+    "email": "sonia78@yahoo.com",
+    "direccion": {
+      "calle": "Via Samanta Egea 23",
+      "ciudad": "Lleida",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 25000
+      }
+    ]
+  },
+  {
+    "nombre": "Nayara Calderon Vicens",
+    "email": "artemio57@yahoo.com",
+    "direccion": {
+      "calle": "Paseo Severo Alberola 94 Piso 5 ",
+      "ciudad": "Ourense",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 200000
+      }
+    ]
+  },
+  {
+    "nombre": "Óscar Somoza Adadia",
+    "email": "socorro21@hotmal.com",
+    "direccion": {
+      "calle": "Calle de Porfirio Robledo 14 Apt. 92 ",
+      "ciudad": "Soria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 120000
+      }
+    ]
+  },
+  {
+    "nombre": "Melania Pi Cruz",
+    "email": "zgimeno@yahoo.com",
+    "direccion": {
+      "calle": "Glorieta Haydée Ruiz 64 Apt. 24 ",
+      "ciudad": "Soria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 650000
+      },
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 150000
+      }
+    ]
+  },
+  {
+    "nombre": "Isabela Nieves Oliva Cabezas",
+    "email": "i.nieves@hotmail.com.",
+    "direccion": {
+      "calle": "Acceso de Tamara Segarra 78",
+      "ciudad": "Cáceres",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 100000
+      }
+    ]
+  },
+  {
+    "nombre": "Emilio Rios-Cabo",
+    "email": "spujadas@yahoo.com",
+    "direccion": {
+      "calle": "Paseo de Otilia Francisco 74",
+      "ciudad": "Cáceres",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 120000
+      }
+    ]
+  },
+  {
+    "nombre": "Ruben Madrigal",
+    "email": "rosaura30@gmail.com",
+    "direccion": {
+      "calle": "Ronda de Nazario Bertrán 49 Piso 8 ",
+      "ciudad": "Soria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 50000
+      }
+    ]
+  },
+  {
+    "nombre": "Casemiro Julián Ramis",
+    "email": "maria-jesusgalindo@gmail.com",
+    "direccion": {
+      "calle": "Cañada Yéssica Priego 54 Apt. 90 ",
+      "ciudad": "Girona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Monitor",
+        "cantidad": 1,
+        "precio": 150000
+      }
+    ]
+  },
+  {
+    "nombre": "Sandalio Aznar Pomares",
+    "email": "dominguezmaria-fernanda@gmail.com",
+    "direccion": {
+      "calle": "Calle de Marita Ochoa 623 Piso 8 ",
+      "ciudad": "La Coruña",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 35000
+      }
+    ]
+  },
+  {
+    "nombre": "Adelia Soler Viña",
+    "email": "carmen34@yahoo.com",
+    "direccion": {
+      "calle": "Ronda José Mari Coronado 22",
+      "ciudad": "Badajoz",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 45000
+      }
+    ]
+  },
+  {
+    "nombre": "Abigaíl Villanueva-Izaguirre",
+    "email": "augusto57@yahoo.com",
+    "direccion": {
+      "calle": "C. Adelina Larrañaga 92",
+      "ciudad": "Tarragona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 350000
+      }
+    ]
+  },
+  {
+    "nombre": "Héctor Luna Falcó",
+    "email": "rosariomachado@hotmail.com",
+    "direccion": {
+      "calle": "Alameda Águeda Bueno 88",
+      "ciudad": "Baleares",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 250000
+      }
+    ]
+  },
+  {
+    "nombre": "Edelmiro del Pozo",
+    "email": "petronacamino@yahoo.com",
+    "direccion": {
+      "calle": "C. Horacio Villar 60 Piso 1 ",
+      "ciudad": "Cáceres",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 55000
+      }
+    ]
+  },
+  {
+    "nombre": "Eugenio Jover Delgado",
+    "email": "moralestere@hotmail.com",
+    "direccion": {
+      "calle": "Paseo Fito Terrón 93",
+      "ciudad": "Castellón",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 65000
+      }
+    ]
+  },
+  {
+    "nombre": "Alejo Clavero Rozas",
+    "email": "ruanoagueda@hotmail.com",
+    "direccion": {
+      "calle": "Via Curro Mulet 552 Apt. 70 ",
+      "ciudad": "Salamanca",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 47000
+      }
+    ]
+  },
+  {
+    "nombre": "Teresita Pulido Alcalá",
+    "email": "carmeloaviles@gmail.com",
+    "direccion": {
+      "calle": "Calle de Emiliana Pozuelo 99",
+      "ciudad": "Segovia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 25000
+      }
+    ]
+  },
+  {
+    "nombre": "Andrés Felipe Pelayo Mur",
+    "email": "santunez@yahoo.com",
+    "direccion": {
+      "calle": "Acceso de Fermín Baños 5",
+      "ciudad": "Albacete",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 20000
+      }
+    ]
+  },
+  {
+    "nombre": "Juan Pablo Cano Guzmán",
+    "email": "dan88@gmail.com",
+    "direccion": {
+      "calle": "Paseo Estefanía Rodríguez 49",
+      "ciudad": "La Coruña",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 70000
+      }
+    ]
+  },
+  {
+    "nombre": "Marcela Viñas Vara",
+    "email": "vergaradolores@gmail.com",
+    "direccion": {
+      "calle": "Callejón Cornelio Marin 71",
+      "ciudad": "Vizcaya",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 45000
+      }
+    ]
+  },
+  {
+    "nombre": "Rosenda Alemán Puig",
+    "email": "calixtacabanillas@gmail.com",
+    "direccion": {
+      "calle": "Acceso de Nicolasa Iglesia 5 Apt. 93 ",
+      "ciudad": "Girona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 39990
+      }
+    ]
+  },
+  {
+    "nombre": "Mayte del Ripoll",
+    "email": "piavazquez@hotmail.com",
+    "direccion": {
+      "calle": "Pasaje de Eulalia Morillo 193 Piso 2 ",
+      "ciudad": "Palencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 700000
+      }
+    ]
+  },
+  {
+    "nombre": "Natanael Asenjo-Oliveras",
+    "email": "camilo83@yahoo.com",
+    "direccion": {
+      "calle": "Ronda Catalina Roselló 2 Piso 6 ",
+      "ciudad": "Baleares",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 100000
+      }
+    ]
+  },
+  {
+    "nombre": "Ainoa Coloma Romero",
+    "email": "arsenio27@gmail.com",
+    "direccion": {
+      "calle": "Camino Claudio Romero 16",
+      "ciudad": "Zamora",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 120000
+      }
+    ]
+  },
+  {
+    "nombre": "Loida Vega Cruz",
+    "email": "planaeliana@yahoo.com",
+    "direccion": {
+      "calle": "Urbanización Paulino Montaña 78",
+      "ciudad": "Cuenca",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 350000
+      }
+    ]
+  },
+  {
+    "nombre": "Encarnación Catalán Osorio",
+    "email": "gasconmarcio@hotmail.com",
+    "direccion": {
+      "calle": "Cañada de Fátima Cabeza 22",
+      "ciudad": "Santa Cruz de Tenerife",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 95000
+      }
+    ]
+  },
+  {
+    "nombre": "Sol Rebollo Feliu",
+    "email": "perla41@hotmail.com",
+    "direccion": {
+      "calle": "C. Jacinto Pinilla 89",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 195000
+      }
+    ]
+  },
+  {
+    "nombre": "Almudena Concepción Contreras Diéguez",
+    "email": "victoriasalazar@gmail.com",
+    "direccion": {
+      "calle": "C. de Otilia Olmedo 99",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 2,
+        "precio": 50000
+      }
+    ]
+  },
+  {
+    "nombre": "Raúl Suarez Marti",
+    "email": "abilioarrieta@gmail.com",
+    "direccion": {
+      "calle": "Camino Maximiano Barco 621",
+      "ciudad": "Cáceres",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 132000
+      }
+    ]
+  },
+  {
+    "nombre": "Ruy Estrada Andrés",
+    "email": "dmontoya@yahoo.com",
+    "direccion": {
+      "calle": "Calle de Che Gallo 24",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 21000
+      },
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 70000
+      }
+    ]
+  },
+  {
+    "nombre": "Amanda Gómez Gracia",
+    "email": "tatiana98@hotmail.com",
+    "direccion": {
+      "calle": "Urbanización Esteban Salinas 5 Piso 2 ",
+      "ciudad": "Asturias",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 750000
+      },
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 120000
+      }
+    ]
+  },
+  {
+    "nombre": "Azucena Cobo Acero",
+    "email": "mariselavalenzuela@gmail.com",
+    "direccion": {
+      "calle": "Pasadizo de Zacarías Barrera 540 Piso 1 ",
+      "ciudad": "Castellón",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Monitor",
+        "cantidad": 2,
+        "precio": 350000
+      }
+    ]
+  },
+  {
+    "nombre": "Amor Palomo Calatayud",
+    "email": "seguiemilio@hotmail.com",
+    "direccion": {
+      "calle": "Cuesta Guadalupe Lastra 436",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 73000
+      }
+    ]
+  },
+  {
+    "nombre": "Dora Ayala Tena",
+    "email": "aguilacipriano@gmail.com",
+    "direccion": {
+      "calle": "Callejón de Eric Jove 66 Piso 8 ",
+      "ciudad": "Soria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 100000
+      }
+    ]
+  },
+  {
+    "nombre": "Rufino Blanes",
+    "email": "jennifer85@yahoo.com",
+    "direccion": {
+      "calle": "Camino de Jose Ramón Mesa 5 Apt. 70 ",
+      "ciudad": "Navarra",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 160000
+      },
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 68000
+      }
+    ]
+  },
+  {
+    "nombre": "Amílcar Julián Garriga",
+    "email": "marcia61@yahoo.com",
+    "direccion": {
+      "calle": "Pasaje de Rosalina Vaquero 663",
+      "ciudad": "Huelva",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 3,
+        "precio": 60000
+      }
+    ]
+  },
+  {
+    "nombre": "Vasco Pera Trillo",
+    "email": "v.pera@hotmail.com",
+    "direccion": {
+      "calle": "Callejón de Emilio Tovar 34 Apt. 59 ",
+      "ciudad": "Almería",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 33990
+      }
+    ]
+  },
+  {
+    "nombre": "Víctor de Arribas",
+    "email": "simoafrica@yahoo.com",
+    "direccion": {
+      "calle": "Ronda Alfredo Ferrán 47",
+      "ciudad": "Salamanca",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 115000
+      }
+    ]
+  },
+  {
+    "nombre": "Isidro Hernández Perales",
+    "email": "i.perales@hotmail.com",
+    "direccion": {
+      "calle": "Cañada Tania Briones 26 Puerta 1 ",
+      "ciudad": "Cantabria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 650000
+      }
+    ]
+  },
+  {
+    "nombre": "Rodolfo del Real",
+    "email": "almudena49@gmail.com",
+    "direccion": {
+      "calle": "Avenida de Adelia Ojeda 785 Piso 0 ",
+      "ciudad": "Guipúzcoa",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 105000
+      },
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 45000
+      }
+    ]
+  },
+  {
+    "nombre": "Rosa María Acosta Arregui",
+    "email": "smayoral@yahoo.com",
+    "direccion": {
+      "calle": "Glorieta de Rocío Alvarez 1 Piso 5 ",
+      "ciudad": "Baleares",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 138500
+      }
+    ]
+  },
+  {
+    "nombre": "Julia Álvarez-Olivera",
+    "email": "ritacaceres@gmail.com",
+    "direccion": {
+      "calle": "Pasadizo de Vicenta Lladó 19 Apt. 05 ",
+      "ciudad": "Melilla",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 355000
+      },
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 42000
+      }
+    ]
+  },
+  {
+    "nombre": "Santos Llanos Heredia",
+    "email": "fgarrido@gmail.com",
+    "direccion": {
+      "calle": "Plaza de Miguel Ángel Nadal 41",
+      "ciudad": "Girona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 788000
+      }
+    ]
+  },
+  {
+    "nombre": "Reyes Alegria Isern",
+    "email": "lrosell@yahoo.com",
+    "direccion": {
+      "calle": "Camino Alejo Flores 14",
+      "ciudad": "Madrid",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 40000
+      },
+      {
+        "producto": "Monitor",
+        "cantidad": 2,
+        "precio": 150000
+      }
+    ]
+  },
+  {
+    "nombre": "Delia Uribe Badía",
+    "email": "amador76@hotmail.com",
+    "direccion": {
+      "calle": "Cuesta de Águeda Abellán 1 Puerta 4 ",
+      "ciudad": "Badajoz",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 330000
+      },
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 130000
+      }
+    ]
+  },
+  {
+    "nombre": "Ernesto Morera Espinosa",
+    "email": "eutropio60@yahoo.com",
+    "direccion": {
+      "calle": "Calle Ligia Giner 91 Puerta 2 ",
+      "ciudad": "Las Palmas",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 100000
+      }
+    ]
+  },
+  {
+    "nombre": "Cruz Meléndez Arnal",
+    "email": "friasainara@hotmail.com",
+    "direccion": {
+      "calle": "Avenida Aurelio Téllez 16 Piso 6 ",
+      "ciudad": "Huelva",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 217000
+      },
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 750000
+      }
+    ]
+  },
+  {
+    "nombre": "Fidela Cámara Bernal",
+    "email": "teobaldo56@yahoo.com",
+    "direccion": {
+      "calle": "Avenida de Noé Artigas 99 Puerta 2 ",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 25000
+      }
+    ]
+  },
+  {
+    "nombre": "Marcelo Caparrós Montesinos",
+    "email": "olimpiaquintero@gmail.com",
+    "direccion": {
+      "calle": "Pasadizo Jacinto Serra 25 Piso 7 ",
+      "ciudad": "Toledo",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 500000
+      }
+    ]
+  },
+  {
+    "nombre": "Ariel Bartolomé Carreras",
+    "email": "jose-antonio04@yahoo.com",
+    "direccion": {
+      "calle": "Vial de Georgina Cerdán 93",
+      "ciudad": "Toledo",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 17000
+      }
+    ]
+  },
+  {
+    "nombre": "Mohamed Valencia",
+    "email": "castillonazaret@hotmail.com",
+    "direccion": {
+      "calle": "Alameda Javier Lara 708 Puerta 4 ",
+      "ciudad": "Almería",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Monitor",
+        "cantidad": 2,
+        "precio": 200000
+      }
+    ]
+  },
+  {
+    "nombre": "Darío Pinto Gomis",
+    "email": "benito58@yahoo.com",
+    "direccion": {
+      "calle": "Rambla Alex Chaves 25",
+      "ciudad": "Córdoba",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 25000
+      }
+    ]
+  },
+  {
+    "nombre": "Haydée Mercader Cervantes",
+    "email": "slorenzo@hotmail.com",
+    "direccion": {
+      "calle": "Pasadizo de Ainoa Aranda 5 Puerta 2 ",
+      "ciudad": "Valladolid",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 140000
+      }
+    ]
+  },
+  {
+    "nombre": "Manuel Vergara Colomer",
+    "email": "esilva@yahoo.com",
+    "direccion": {
+      "calle": "C. Gerónimo Codina 307",
+      "ciudad": "Lleida",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 171000
+      }
+    ]
+  },
+  {
+    "nombre": "Aurelia Anguita Abella",
+    "email": "marticebrian@gmail.com",
+    "direccion": {
+      "calle": "Glorieta de Jose Angel Múñiz 95",
+      "ciudad": "Palencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 132000
+      }
+    ]
+  },
+  {
+    "nombre": "Guadalupe Fermín Morata Zaragoza",
+    "email": "noeblanca@gmail.com",
+    "direccion": {
+      "calle": "Cuesta de Florencio Chaves 620",
+      "ciudad": "Castellón",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 32000
+      }
+    ]
+  },
+  {
+    "nombre": "Dorotea Arroyo Bárcena",
+    "email": "losasilvia@hotmail.com",
+    "direccion": {
+      "calle": "Pasaje de Piedad Llobet 33 Piso 9 ",
+      "ciudad": "Huesca",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 866000
+      }
+    ]
+  },
+  {
+    "nombre": "Eufemia del Artigas",
+    "email": "felipe13@hotmail.com",
+    "direccion": {
+      "calle": "Alameda Ema Castellanos 29 Puerta 2 ",
+      "ciudad": "Baleares",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 35000
+      }
+    ]
+  },
+  {
+    "nombre": "Dorotea de Raya",
+    "email": "marianafarre@gmail.com",
+    "direccion": {
+      "calle": "Rambla de José Mari Sala 52 Puerta 7 ",
+      "ciudad": "Navarra",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 800000
+      }
+    ]
+  },
+  {
+    "nombre": "Melania Evelia Barroso Almagro",
+    "email": "boneteufemia@yahoo.com",
+    "direccion": {
+      "calle": "Via Juan Francisco Peralta 4 Piso 2 ",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 25000
+      }
+    ]
+  },
+  {
+    "nombre": "Baudelio Tolosa Cerdá",
+    "email": "mercheriquelme@yahoo.com",
+    "direccion": {
+      "calle": "Ronda Pascual Ortega 782 Apt. 72 ",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 135000
+      }
+    ]
+  },
+  {
+    "nombre": "Amado Barberá-Vallejo",
+    "email": "ameliavelazquez@hotmail.com",
+    "direccion": {
+      "calle": "Calle de Marisela Cortes 489",
+      "ciudad": "Cádiz",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 30000
+      }
+    ]
+  },
+  {
+    "nombre": "Rosa María Madrid",
+    "email": "dlopez@yahoo.com",
+    "direccion": {
+      "calle": "Pasadizo Ruben Pinedo 74 Apt. 98 ",
+      "ciudad": "Granada",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 11,
+        "precio": 130000
+      }
+    ]
+  },
+  {
+    "nombre": "Marisela Morillo Cózar",
+    "email": "calistagomez@yahoo.com",
+    "direccion": {
+      "calle": "Urbanización de Damián Pulido 80",
+      "ciudad": "Soria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 75000
+      }
+    ]
+  },
+  {
+    "nombre": "Hipólito Cifuentes Calderon",
+    "email": "sebastianvilalta@yahoo.com",
+    "direccion": {
+      "calle": "C. Judith Pedraza 550",
+      "ciudad": "Segovia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 25000
+      }
+    ]
+  },
+  {
+    "nombre": "Noelia Vaquero",
+    "email": "cristobal20@hotmail.com",
+    "direccion": {
+      "calle": "Avenida Elisa Alsina 35 Apt. 87 ",
+      "ciudad": "Sevilla",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Monitor",
+        "cantidad": 1,
+        "precio": 100000
+      },
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 20000
+      }
+    ]
+  },
+  {
+    "nombre": "Julio Moliner Torrens",
+    "email": "navarrocayetana@hotmail.com",
+    "direccion": {
+      "calle": "Pasaje Jose Francisco Jordán 80 Apt. 10 ",
+      "ciudad": "Granada",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 808000
+      }
+    ]
+  },
+  {
+    "nombre": "María Cristina Casares Canales",
+    "email": "nerealeon@yahoo.com",
+    "direccion": {
+      "calle": "Ronda Desiderio Miralles 22",
+      "ciudad": "Santa Cruz de Tenerife",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 38000
+      }
+    ]
+  },
+  {
+    "nombre": "Juan Yáñez",
+    "email": "nicolasbernal@hotmail.com",
+    "direccion": {
+      "calle": "Cañada Chus Cabanillas 63 Piso 1 ",
+      "ciudad": "Valladolid",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 450000
+      }
+    ]
+  },
+  {
+    "nombre": "Xavier de Batalla",
+    "email": "cocaeliseo@yahoo.com",
+    "direccion": {
+      "calle": "Vial Bernardino Infante 45 Apt. 35 ",
+      "ciudad": "La Rioja",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 15000
+      },
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 40000
+      }
+    ]
+  },
+  {
+    "nombre": "Amaro Torrijos Salgado",
+    "email": "carranzaamor@gmail.com",
+    "direccion": {
+      "calle": "Pasadizo Primitivo Bou 69",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 65000
+      },
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 75000
+      }
+    ]
+  },
+  {
+    "nombre": "Maristela Ramis Isern",
+    "email": "alfonsotoni@gmail.com",
+    "direccion": {
+      "calle": "Glorieta Vanesa Tamarit 9",
+      "ciudad": "La Rioja",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 28000
+      }
+    ]
+  },
+  {
+    "nombre": "Ariel Toledo Guillén",
+    "email": "gilbertotorrent@gmail.com",
+    "direccion": {
+      "calle": "Rambla Cleto Olivares 34",
+      "ciudad": "Murcia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Monitor",
+        "cantidad": 2,
+        "precio": 250000
+      }
+    ]
+  },
+  {
+    "nombre": "Begoña del Ariza",
+    "email": "hervascurro@yahoo.com",
+    "direccion": {
+      "calle": "Ronda de Cipriano Méndez 38 Apt. 33 ",
+      "ciudad": "La Rioja",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 200000
+      }
+    ]
+  },
+  {
+    "nombre": "Seve de Aparicio",
+    "email": "juliacesar@yahoo.com",
+    "direccion": {
+      "calle": "C. de Anselma Rey 94",
+      "ciudad": "Soria",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 32000
+      }
+    ]
+  },
+  {
+    "nombre": "Vilma Romero Rubio",
+    "email": "eulalia82@gmail.com",
+    "direccion": {
+      "calle": "Pasaje Francisco Jose Sosa 354 Apt. 95 ",
+      "ciudad": "Asturias",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 130000
+      }
+    ]
+  },
+  {
+    "nombre": "Glauco Bautista Vilalta",
+    "email": "arreguiarturo@hotmail.com",
+    "direccion": {
+      "calle": "C. Luis Ángel Trillo 4",
+      "ciudad": "La Coruña",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartphone",
+        "cantidad": 1,
+        "precio": 473000
+      }
+    ]
+  },
+  {
+    "nombre": "Felix Baeza Lago",
+    "email": "expositotatiana@yahoo.com",
+    "direccion": {
+      "calle": "Alameda Amparo Pont 62 Puerta 4 ",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 160000
+      }
+    ]
+  },
+  {
+    "nombre": "Encarna Socorro Rozas Roman",
+    "email": "cebrian71@yahoo.com",
+    "direccion": {
+      "calle": "Acceso de Albano Falcón 640",
+      "ciudad": "Lugo",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 450000
+      }
+    ]
+  },
+  {
+    "nombre": "Anastasio Carballo Aller",
+    "email": "merche29@hotmail.com",
+    "direccion": {
+      "calle": "Cuesta Encarnación Aguirre 2",
+      "ciudad": "Burgos",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 95000
+      }
+    ]
+  },
+  {
+    "nombre": "Ana Hernández-Méndez",
+    "email": "paezclemente@gmail.com",
+    "direccion": {
+      "calle": "Vial Zaira Pardo 96",
+      "ciudad": "Cádiz",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 15000
+      }
+    ]
+  },
+  {
+    "nombre": "Vera Rueda Ferrando",
+    "email": "nsolana@yahoo.com",
+    "direccion": {
+      "calle": "Acceso Leopoldo Valenciano 18",
+      "ciudad": "Lleida",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 52000
+      }
+    ]
+  },
+  {
+    "nombre": "Joan Mateo Juárez",
+    "email": "ariel30@hotmail.com",
+    "direccion": {
+      "calle": "Glorieta Manu Cabañas 410 Apt. 79 ",
+      "ciudad": "León",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 45000
+      }
+    ]
+  },
+  {
+    "nombre": "Toribio García Bastida",
+    "email": "fcapdevila@gmail.com",
+    "direccion": {
+      "calle": "Alameda de Valeria Haro 74 Apt. 91 ",
+      "ciudad": "Álava",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 30000
+      }
+    ]
+  },
+  {
+    "nombre": "Nazaret Baltasar Agullo Yáñez",
+    "email": "godoyjose@gmail.com",
+    "direccion": {
+      "calle": "Urbanización de Erasmo Macías 7",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 40000
+      }
+    ]
+  },
+  {
+    "nombre": "Adelaida del Madrigal",
+    "email": "alfredoacero@yahoo.com",
+    "direccion": {
+      "calle": "Rambla de Eugenia Jaume 84 Apt. 30 ",
+      "ciudad": "Melilla",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Tablet",
+        "cantidad": 1,
+        "precio": 250000
+      }
+    ]
+  },
+  {
+    "nombre": "Roberta del Pineda",
+    "email": "juan-pablopi@hotmail.com",
+    "direccion": {
+      "calle": "Rambla Marita Solana 73",
+      "ciudad": "Albacete",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Laptop",
+        "cantidad": 1,
+        "precio": 450000
+      }
+    ]
+  },
+  {
+    "nombre": "Aristides Calvet Galán",
+    "email": "jescolano@hotmail.com",
+    "direccion": {
+      "calle": "Callejón de Eloísa Molina 90",
+      "ciudad": "Zamora",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 170000
+      }
+    ]
+  },
+  {
+    "nombre": "Victor de Borrego",
+    "email": "nicolassans@yahoo.com",
+    "direccion": {
+      "calle": "Cañada Pascual Diéguez 97",
+      "ciudad": "Huelva",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares",
+        "cantidad": 1,
+        "precio": 15000
+      }
+    ]
+  },
+  {
+    "nombre": "Obdulia de Benito",
+    "email": "ferreramaura@gmail.com",
+    "direccion": {
+      "calle": "Camino de Edgardo Sola 9",
+      "ciudad": "Albacete",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado",
+        "cantidad": 1,
+        "precio": 60000
+      }
+    ]
+  },
+  {
+    "nombre": "Jose Valle Sarabia",
+    "email": "adriana97@gmail.com",
+    "direccion": {
+      "calle": "Callejón de Enrique Pinilla 184 Apt. 93 ",
+      "ciudad": "Castellón",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 124000
+      }
+    ]
+  },
+  {
+    "nombre": "Mónica Lucía Grande Valbuena",
+    "email": "rosendacasanovas@yahoo.com",
+    "direccion": {
+      "calle": "Rambla de Eutimio Bernal 640 Apt. 98 ",
+      "ciudad": "Granada",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Impresora",
+        "cantidad": 1,
+        "precio": 200000
+      }
+    ]
+  },
+  {
+    "nombre": "Trinidad Álamo",
+    "email": "juan-franciscosalva@yahoo.com",
+    "direccion": {
+      "calle": "Plaza de Vito Múñiz 90",
+      "ciudad": "Santa Cruz de Tenerife",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Ratón",
+        "cantidad": 1,
+        "precio": 22000
+      }
+    ]
+  },
+  {
+    "nombre":"Alejandra Gomez",
+    "email":"a.gomez@gmail.com",
+    "direccion":{
+      "calle":"Salvador 854",
+      "ciudad":"Barcelona",
+      "pais":"España"
+  },
+  "pedidos":[
+    {
+    "producto":"Monitor",
+     "cantidad":1,
+     "precio":150000
+    }
+  ]
+  },
+  {
+    "nombre":"Juan Hernandez",
+    "email":"j.hernandez@hotmail.com",
+    "direccion":{
+      "calle":"Los claveles 258",
+      "ciudad":"Asturias",
+      "pais":"España"
+    },
+      "pedidos":[{
+        "producto":"Teclado",
+        "cantidad":1,
+        "precio": 30000
+      }
+    ]
+  },
+  {
+    "nombre":"Amanda Flores",
+    "email":"a.flores@yahoo.com",
+    "direccion":{
+      "calle":"Las focas 785",
+      "ciudad":"Alicante",
+      "pais":"España"
+    },
+    "pedidos":[{
+      "producto":"Altavoz Bluetooth",
+      "cantidad":1,
+      "precio":100000
+    }
+  ]
+}, 
+
+  {
+    "nombre": "Emma Navarro",
+    "email": "emma.navarro@yahoo.com",
+    "direccion": {
+      "calle": "Las Rosas 280",
+      "ciudad": "Bilbao",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado mecánico",
+        "cantidad": 1,
+        "precio": 98144
+      }
+    ]
+  },
+  {
+    "nombre": "Leo López",
+    "email": "leo.lópez@gmail.com",
+    "direccion": {
+      "calle": "Las Amapolas 608",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 2,
+        "precio": 60932
+      }
+    ]
+  },
+  {
+    "nombre": "Julia Jiménez",
+    "email": "julia.jiménez@gmail.com",
+    "direccion": {
+      "calle": "La Luna 210",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 3,
+        "precio": 86104
+      }
+    ]
+  },
+  {
+    "nombre": "Valeria Moreno",
+    "email": "valeria.moreno@hotmail.com",
+    "direccion": {
+      "calle": "El Sol 368",
+      "ciudad": "Murcia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 3,
+        "precio": 33494
+      }
+    ]
+  },
+  {
+    "nombre": "Leo Torres",
+    "email": "leo.torres@yahoo.com",
+    "direccion": {
+      "calle": "Las Acacias 792",
+      "ciudad": "Zaragoza",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 2,
+        "precio": 99503
+      }
+    ]
+  },
+  {
+    "nombre": "Alba Torres",
+    "email": "alba.torres@gmail.com",
+    "direccion": {
+      "calle": "Las Palmas 106",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado mecánico",
+        "cantidad": 3,
+        "precio": 32214
+      }
+    ]
+  },
+  {
+    "nombre": "Sara Domínguez",
+    "email": "sara.domínguez@hotmail.com",
+    "direccion": {
+      "calle": "Los Delfines 204",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 2,
+        "precio": 78959
+      }
+    ]
+  },
+  {
+    "nombre": "Carmen Moreno",
+    "email": "carmen.moreno@gmail.com",
+    "direccion": {
+      "calle": "El Sol 575",
+      "ciudad": "Zaragoza",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 1,
+        "precio": 102434
+      }
+    ]
+  },
+  {
+    "nombre": "Sara Torres",
+    "email": "sara.torres@gmail.com",
+    "direccion": {
+      "calle": "Los Pinos 410",
+      "ciudad": "Sevilla",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 3,
+        "precio": 35623
+      }
+    ]
+  },
+  {
+    "nombre": "Sara Gil",
+    "email": "sara.gil@gmail.com",
+    "direccion": {
+      "calle": "Los Cipreses 57",
+      "ciudad": "Madrid",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado mecánico",
+        "cantidad": 3,
+        "precio": 101951
+      }
+    ]
+  },
+  {
+    "nombre": "Julia Romero",
+    "email": "julia.romero@yahoo.com",
+    "direccion": {
+      "calle": "El Sol 554",
+      "ciudad": "Zaragoza",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 3,
+        "precio": 149453
+      }
+    ]
+  },
+  {
+    "nombre": "Mateo Romero",
+    "email": "mateo.romero@hotmail.com",
+    "direccion": {
+      "calle": "Los Delfines 554",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 1,
+        "precio": 131483
+      }
+    ]
+  },
+  {
+    "nombre": "Sofía Díaz",
+    "email": "sofía.díaz@yahoo.com",
+    "direccion": {
+      "calle": "El Roble 390",
+      "ciudad": "Bilbao",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 2,
+        "precio": 100035
+      }
+    ]
+  },
+  {
+    "nombre": "Daniel Ruiz",
+    "email": "daniel.ruiz@yahoo.com",
+    "direccion": {
+      "calle": "Los Sauces 172",
+      "ciudad": "Bilbao",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Cámara deportiva",
+        "cantidad": 2,
+        "precio": 39516
+      }
+    ]
+  },
+  {
+    "nombre": "Valeria Vázquez",
+    "email": "valeria.vázquez@yahoo.com",
+    "direccion": {
+      "calle": "Los Flamencos 884",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 3,
+        "precio": 106733
+      }
+    ]
+  },
+  {
+    "nombre": "Carmen Díaz",
+    "email": "carmen.díaz@yahoo.com",
+    "direccion": {
+      "calle": "Las Estrellas 840",
+      "ciudad": "Madrid",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 2,
+        "precio": 54389
+      }
+    ]
+  },
+  {
+    "nombre": "Valeria Navarro",
+    "email": "valeria.navarro@gmail.com",
+    "direccion": {
+      "calle": "Las Estrellas 951",
+      "ciudad": "Zaragoza",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 3,
+        "precio": 46245
+      }
+    ]
+  },
+  {
+    "nombre": "Lucas Ruiz",
+    "email": "lucas.ruiz@yahoo.com",
+    "direccion": {
+      "calle": "Las Rosas 237",
+      "ciudad": "Sevilla",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Cámara deportiva",
+        "cantidad": 2,
+        "precio": 114088
+      }
+    ]
+  },
+  {
+    "nombre": "Lara Sánchez",
+    "email": "lara.sánchez@gmail.com",
+    "direccion": {
+      "calle": "Las Focas 665",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 3,
+        "precio": 114056
+      }
+    ]
+  },
+  {
+    "nombre": "Sara Fernández",
+    "email": "sara.fernández@hotmail.com",
+    "direccion": {
+      "calle": "Las Estrellas 318",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 2,
+        "precio": 138705
+      }
+    ]
+  },
+  {
+    "nombre": "Alba Ramos",
+    "email": "alba.ramos@yahoo.com",
+    "direccion": {
+      "calle": "Los Delfines 196",
+      "ciudad": "Palma",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 1,
+        "precio": 47353
+      }
+    ]
+  },
+  {
+    "nombre": "Pablo Ramos",
+    "email": "pablo.ramos@hotmail.com",
+    "direccion": {
+      "calle": "La Pradera 771",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 1,
+        "precio": 63674
+      }
+    ]
+  },
+  {
+    "nombre": "Valeria Pérez",
+    "email": "valeria.pérez@hotmail.com",
+    "direccion": {
+      "calle": "Las Rosas 174",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 2,
+        "precio": 119718
+      }
+    ]
+  },
+  {
+    "nombre": "Sara Navarro",
+    "email": "sara.navarro@hotmail.com",
+    "direccion": {
+      "calle": "Los Cipreses 775",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado mecánico",
+        "cantidad": 1,
+        "precio": 72507
+      }
+    ]
+  },
+  {
+    "nombre": "Mario Jiménez",
+    "email": "mario.jiménez@gmail.com",
+    "direccion": {
+      "calle": "La Luna 136",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 2,
+        "precio": 80690
+      }
+    ]
+  },
+  {
+    "nombre": "Manuel Alonso",
+    "email": "manuel.alonso@hotmail.com",
+    "direccion": {
+      "calle": "El Prado 75",
+      "ciudad": "Sevilla",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 3,
+        "precio": 101367
+      }
+    ]
+  },
+  {
+    "nombre": "Pablo Muñoz",
+    "email": "pablo.muñoz@gmail.com",
+    "direccion": {
+      "calle": "La Luna 521",
+      "ciudad": "Madrid",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado mecánico",
+        "cantidad": 1,
+        "precio": 94098
+      }
+    ]
+  },
+  {
+    "nombre": "Martina Ruiz",
+    "email": "martina.ruiz@yahoo.com",
+    "direccion": {
+      "calle": "Los Luceros 52",
+      "ciudad": "Palma",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Cámara deportiva",
+        "cantidad": 3,
+        "precio": 69559
+      }
+    ]
+  },
+  {
+    "nombre": "Daniel Moreno",
+    "email": "daniel.moreno@hotmail.com",
+    "direccion": {
+      "calle": "Las Acacias 307",
+      "ciudad": "Zaragoza",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 2,
+        "precio": 67050
+      }
+    ]
+  },
+  {
+    "nombre": "Lara Muñoz",
+    "email": "lara.muñoz@gmail.com",
+    "direccion": {
+      "calle": "Los Luceros 673",
+      "ciudad": "Madrid",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 3,
+        "precio": 86820
+      }
+    ]
+  },
+  {
+    "nombre": "Martina Torres",
+    "email": "martina.torres@gmail.com",
+    "direccion": {
+      "calle": "Los Pinos 775",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 2,
+        "precio": 32494
+      }
+    ]
+  },
+  {
+    "nombre": "Mario Díaz",
+    "email": "mario.díaz@yahoo.com",
+    "direccion": {
+      "calle": "Las Amapolas 912",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Teclado mecánico",
+        "cantidad": 1,
+        "precio": 49978
+      }
+    ]
+  },
+  {
+    "nombre": "Sara Navarro",
+    "email": "sara.navarro@hotmail.com",
+    "direccion": {
+      "calle": "Los Flamencos 309",
+      "ciudad": "Sevilla",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Altavoz Bluetooth",
+        "cantidad": 3,
+        "precio": 115111
+      }
+    ]
+  },
+  {
+    "nombre": "Pablo Vázquez",
+    "email": "pablo.vázquez@yahoo.com",
+    "direccion": {
+      "calle": "Las Rosas 179",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Cámara deportiva",
+        "cantidad": 3,
+        "precio": 141641
+      }
+    ]
+  },
+  {
+    "nombre": "Daniel Díaz",
+    "email": "daniel.díaz@yahoo.com",
+    "direccion": {
+      "calle": "Los Cipreses 130",
+      "ciudad": "Valencia",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 2,
+        "precio": 81596
+      }
+    ]
+  },
+  {
+    "nombre": "Sofía Sánchez",
+    "email": "sofía.sánchez@hotmail.com",
+    "direccion": {
+      "calle": "Los Delfines 579",
+      "ciudad": "Alicante",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 2,
+        "precio": 137642
+      }
+    ]
+  },
+  {
+    "nombre": "Adrián Alonso",
+    "email": "adrián.alonso@yahoo.com",
+    "direccion": {
+      "calle": "Las Palmas 441",
+      "ciudad": "Palma",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 1,
+        "precio": 37478
+      }
+    ]
+  },
+  {
+    "nombre": "Mateo Romero",
+    "email": "mateo.romero@gmail.com",
+    "direccion": {
+      "calle": "Los Álamos 514",
+      "ciudad": "Zaragoza",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Auriculares inalámbricos",
+        "cantidad": 3,
+        "precio": 112425
+      }
+    ]
+  },
+  {
+    "nombre": "Lucas Domínguez",
+    "email": "lucas.domínguez@hotmail.com",
+    "direccion": {
+      "calle": "Las Estrellas 866",
+      "ciudad": "Zaragoza",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Cámara deportiva",
+        "cantidad": 3,
+        "precio": 45324
+      }
+    ]
+  },
+  {
+    "nombre": "Emma Gil",
+    "email": "emma.gil@yahoo.com",
+    "direccion": {
+      "calle": "Los Álamos 982",
+      "ciudad": "Barcelona",
+      "pais": "España"
+    },
+    "pedidos": [
+      {
+        "producto": "Smartwatch",
+        "cantidad": 1,
+        "precio": 83019
+      }
+    ]
+  }
+])

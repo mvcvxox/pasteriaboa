@@ -1,0 +1,94 @@
+/*css de la pagina de pasteleria */
+body{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+    background-color: #E9E5DA;
+}
+nav{
+    background-color: #A4ABA3;
+
+}
+
+.banner{ 
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}	
+.container-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 5%;
+    
+}
+.container-title{
+    display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.container-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.container-content__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.container-content__text_vision{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2%;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 50%;
+    height: 300px;
+    border: solid 1px #9884B5;
+    border-radius: 10px;
+    border: #9884B5 solid 2px;
+
+}
+.container-content__text_mision{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2%;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 50%;
+    height: 300px;
+    border: solid 1px #9884B5;
+    border-radius: 10px;
+    border: #9884B5 solid 2px;
+}
+.container-content__text_2{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    border: solid 1px #A4ABA3;
+    height: 300px;
+    border-radius: 10px;
+    border: #A4ABA3 solid 2px;
+}
+.bot{
+    background-color: #A4ABA3;
+    border-radius: 10px;
+    border:#9884B5 solid 2px;
+}
+.collapse navbar-collapse{
+    display: flex;
+    
+}

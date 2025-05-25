@@ -50,7 +50,75 @@
 
         </div>
     </nav>
-
+    <section>
+        <strong> Pedidos Perzonalizados </strong>
+        <form id="formulario" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo <span class="text-danger"></span></label>
+                <input type="text" class="form-control" id="nombre" placeholder="Su nombre completo" required>
+                <div class="invalid-feedback">
+                    Por favor ingrese su nombre.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Por favor ingrese un correo válido.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono de contacto</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Solo números, 9-15 dígitos" />
+                <div class="invalid-feedback">
+                    Por favor ingrese un número de teléfono válido.
+                </div>
+            </div>
+             <div class="mb-3">
+            <label for="tipoProducto" class="form-label">Tipo de producto</label>
+            <select class="form-select" id="tipoProducto" name="tipoProducto">
+              <option value="Torta Matrimonio">Torta Matrimonio</option>
+              <option value="Torta Cumpleaños">Tort Cumpleaños</option>
+              <option value="kuchen">kuchen</option>
+              <option value="Tortas en trozos">Tortas en trozos</option>
+              <option value="pasteles en mini">Pasteles version mini</option>
+              <option value="macarrons">Macarrons box</option>
+              <option value="galletas">Galletas box</option>
+                <option value="croissant">Croissant</option>
+            </select>
+          </div>
+           <div class="mb-3">
+            <label for="fechaEntrega" class="form-label">Fecha de entrega <span class="text-danger">*</span></label>
+            <input type="date" class="form-control" id="fechaEntrega" name="fechaEntrega" required />
+            <div class="invalid-feedback">
+                Ingrese una fecha de entrega válida.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="cantidad" class="form-label">Cantidad <span class="text-danger">*</span></label>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" required />
+            <div class="invalid-feedback">
+                Ingrese una cantidad de personas válida.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción del pedido <span class="text-danger">*</span></label>
+            <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Detalles del diseño, sabor, ingredientes, etc." required></textarea>
+            <div class="invalid-feedback">
+                Ingrese una descripción del pedido.
+            </div>
+          </div>
+           <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required />
+            <label class="form-check-label" for="terminos">Acepto los términos y condiciones <span class="text-danger">*</span></label>
+            <div class="invalid-feedback">
+                Debe aceptar los términos y condiciones.
+            </div>
+          </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </section>
     
 </body>
 <footer>

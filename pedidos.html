@@ -18,7 +18,6 @@
 </head>
 
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid d-flex gap-3">
             <div class="d-flex gap-3 align-middle">
@@ -40,10 +39,10 @@
                        <a class="nav-link" href="catalogo.html">Catalogo</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Eventos</a>
+                        <a class="nav-link" href="promociones.html">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pedidos.html">Contactanos</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contactanos</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +50,7 @@
         </div>
     </nav>
     <section>
-        <strong> Pedidos Perzonalizados </strong>
+        <strong> Pedidos Personalizados </strong>
         <form id="formulario" novalidate>
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre Completo <span class="text-danger"></span></label>
@@ -68,17 +67,17 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono de contacto</label>
+                <label for="telefono" class="form-label">Numero de contacto</label>
                 <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Solo números, 9-15 dígitos" />
                 <div class="invalid-feedback">
                     Por favor ingrese un número de teléfono válido.
                 </div>
             </div>
              <div class="mb-3">
-            <label for="tipoProducto" class="form-label">Tipo de producto</label>
+            <label for="TipoProducto" class="form-label">Tipo de producto</label>
             <select class="form-select" id="tipoProducto" name="tipoProducto">
               <option value="Torta Matrimonio">Torta Matrimonio</option>
-              <option value="Torta Cumpleaños">Tort Cumpleaños</option>
+              <option value="Torta Cumpleaños">Torta Cumpleaños</option>
               <option value="kuchen">kuchen</option>
               <option value="Tortas en trozos">Tortas en trozos</option>
               <option value="pasteles en mini">Pasteles version mini</option>
@@ -120,6 +119,8 @@
         </form>
     </section>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/validacion/validacion.js"></script> 
 </body>
 <footer>
 
